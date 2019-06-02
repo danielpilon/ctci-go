@@ -1,4 +1,4 @@
-package main
+package e01
 
 func isUniqueWithMap(s string) bool {
 	if len(s) > 128 {

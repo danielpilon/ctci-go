@@ -1,17 +1,16 @@
-package main
+package e01
 
 import "testing"
 
-var cases []struct {
+type testCase struct {
 	input    string
 	expected bool
 }
 
+var cases []testCase
+
 func init() {
-	cases = []struct {
-		input    string
-		expected bool
-	}{
+	cases = []testCase{
 		{"abcd", true},
 		{"abcdd", false},
 		{"gxSJ2nXDda5WiRq6ow4HNGpxfvS4AzMi2im7UjmfZ3kwGtNf69d69uGns6dL12qeP664hP5sjml85JlxwtA05vRhkK2XnXK3EPPsqHuJmvvkrZByHvYXVV83n7YxcN2h9", false},
