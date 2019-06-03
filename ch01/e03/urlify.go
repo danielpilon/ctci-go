@@ -11,12 +11,6 @@ func urlify(s []rune, length int) {
 		return
 	}
 
-	// whitespaces := 0
-	// for i := 0; i < length; i++ {
-	// 	if s[i] == ' ' {
-	// 		whitespaces++
-	// 	}
-	// }
 	for i := length - 1; i >= 0; i-- {
 		c := s[i]
 		if c == ' ' {
