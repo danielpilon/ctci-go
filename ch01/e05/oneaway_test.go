@@ -14,10 +14,12 @@ func TestIsOneAway(t *testing.T) {
 		{"pale", "ple", true},
 		{"pale", "p13", false},
 		{"pales", "pale", true},
-		{"pales", "pa13", true},
+		{"pales", "pa13", false},
 		{"pale", "bale", true},
 		{"pale", "bA1e", false},
 		{"pale", "bae", false},
+		{"palessssss", "bae", false},
+		{"pales", "palesssss", false},
 	}
 
 	for _, c := range cases {
